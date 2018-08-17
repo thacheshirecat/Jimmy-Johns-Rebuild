@@ -2,7 +2,7 @@
 
 
   <div class="menu-wrap">
-    <button class="top-button">JJ's Menu</button>
+    <button class="top-button" (click)="clickMenu('default')">JJ's Menu</button>
     <button class="top-button">Catering</button><br>
     <button class="accordion" (click)="clickMenu('favorites')">Favorites</button>
     <div class="panel">
@@ -22,7 +22,10 @@
     </div>
   </div>
   <div id="menu-details">
-    <p>hello<p>
-    <img src='./../assets/jimmyjohns_logo.png'>
+    <div *ngIf="childMenuSelection === 'default'">
+      <h3>Jimmy John's Menu</h3>
+      <p>Browse the menu at left and add items to your meal.</p>
+        <img src='./../assets/freak_yeah_menu.jpg'>
+    </div>
   </div>
 </div>

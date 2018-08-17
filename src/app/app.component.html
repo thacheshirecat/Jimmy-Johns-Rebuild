@@ -1,6 +1,6 @@
 <div class="container">
   <app-header-navigation (clickSender)="viewSelect($event)"></app-header-navigation>
   <app-splash-page [childPageSelection]='masterPageSelection'></app-splash-page>
-  <app-menu-list [childPageSelection]='masterPageSelection' [childMenuSelection]='masterMenuSelection' (clickSender)='menuSelect($event)'></app-menu-list>
+  <app-menu-list [childPageSelection]='masterPageSelection' [childMenuSelection]='masterMenuSelection' [childSandwhichList]='masterSandwichList' (clickSender)='menuSelect($event)'></app-menu-list>
   <app-footer-navigation></app-footer-navigation>
 </div>

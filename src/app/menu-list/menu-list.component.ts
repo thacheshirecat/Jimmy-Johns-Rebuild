@@ -9,6 +9,7 @@ export class MenuListComponent
 {
   @Input() childPageSelection: string;
   @Input() childMenuSelection: string;
+  @Input() childSandwhichList: string[];
   @Output() clickSender = new EventEmitter();
 
   clickMenu(category: string)
