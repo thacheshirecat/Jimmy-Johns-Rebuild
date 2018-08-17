@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { HeaderNavigationComponent } from './header-navigation/header-navigation.component';
 import { FooterNavigationComponent } from './footer-navigation/footer-navigation.component';
 import { SplashPageComponent } from './splash-page/splash-page.component';
+import { MenuListComponent } from './menu-list/menu-list.component';
 
 
 @NgModule({
@@ -13,7 +14,8 @@ import { SplashPageComponent } from './splash-page/splash-page.component';
     AppComponent,
     HeaderNavigationComponent,
     FooterNavigationComponent,
-    SplashPageComponent
+    SplashPageComponent,
+    MenuListComponent
   ],
   imports: [
     BrowserModule

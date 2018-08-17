@@ -3,6 +3,10 @@
   height: 150px;
   margin-top: 25px;
 }
+#logo:hover
+{
+  cursor: pointer;
+}
 #order-logo
 {
   height: 75px;

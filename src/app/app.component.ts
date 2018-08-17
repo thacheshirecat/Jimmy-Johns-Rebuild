@@ -7,5 +7,5 @@ import { Component } from '@angular/core';
 })
 export class AppComponent
 {
-  pageSelection: string = 'splash-page';
+  pageSelection: string = 'menu-page';
 }
