@@ -20,12 +20,16 @@
 
     <button class="menu-button" (click)="clickMenu('gargantuan')">The J.J. Gargantuan®</button>
     <div *ngIf="childMenuSelection === 'gargantuan'">
-      <p>Placeholder</p>
+      <button class="sandwich-button" *ngFor="let sandwich of childSandwichList | sandwichtype:filterByType">#{{sandwich.menuId}} {{sandwich.realName}}<br>
+      {{sandwich.unwichCal}}-{{sandwich.wheatCal}} | {{sandwich.totalCal}} Cal<br>
+      {{sandwich.codeName}} {{sandwich.ingredients}}</button>
     </div><br>
 
     <button class="menu-button" (click)="clickMenu('slim')">Plain Slims®</button>
     <div *ngIf="childMenuSelection === 'slim'">
-      <p>Placeholder</p>
+      <button class="sandwich-button" *ngFor="let sandwich of childSandwichList | sandwichtype:filterByType">#{{sandwich.menuId}} {{sandwich.realName}}<br>
+      {{sandwich.unwichCal}}-{{sandwich.wheatCal}} | {{sandwich.totalCal}} Cal<br>
+      {{sandwich.codeName}} {{sandwich.ingredients}}</button>
     </div>
   </div>
 
