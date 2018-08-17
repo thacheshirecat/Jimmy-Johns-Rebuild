@@ -1,0 +1,9 @@
+#splash-ground
+{
+  width: 100%;
+  min-width: 3000px;
+  margin: auto;
+  left: 50%;
+  position: fixed;
+  transform: translateX(-50%);
+}
