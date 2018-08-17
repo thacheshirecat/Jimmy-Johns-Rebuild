@@ -37,3 +37,13 @@
   padding: 10px;
   outline: none;
 }
+.sandwich-button
+{
+  background-color: white;
+  font-family: 'Rockwell W01 Bold',Georgia,serif;
+  color: black;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 12px;
+  outline: none;
+}

@@ -11,7 +11,9 @@
 
     <button class="menu-button" (click)="clickMenu('classics')">Classics</button>
     <div *ngIf="childMenuSelection === 'classics'">
-        <li *ngFor="let sandwich of childSandwichList">{{sandwich.realName}}</li>
+        <button class="sandwich-button" *ngFor="let sandwich of childSandwichList">#{{sandwich.menuId}} {{sandwich.realName}}<br>
+        {{sandwich.unwichCal}}-{{sandwich.wheatCal}} | {{sandwich.totalCal}} Cal<br>
+        {{sandwich.codeName}} {{sandwich.ingredients}}</button>
     </div><br>
 
     <button class="menu-button" (click)="clickMenu('gargantuan')">The J.J. Gargantuan®</button>

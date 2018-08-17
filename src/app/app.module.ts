@@ -5,6 +5,7 @@ import { HeaderNavigationComponent } from './header-navigation/header-navigation
 import { FooterNavigationComponent } from './footer-navigation/footer-navigation.component';
 import { SplashPageComponent } from './splash-page/splash-page.component';
 import { MenuListComponent } from './menu-list/menu-list.component';
+import { SandwichTypePipe } from './sandwich-type.pipe';
 
 
 @NgModule({
@@ -13,7 +14,8 @@ import { MenuListComponent } from './menu-list/menu-list.component';
     HeaderNavigationComponent,
     FooterNavigationComponent,
     SplashPageComponent,
-    MenuListComponent
+    MenuListComponent,
+    SandwichTypePipe
   ],
   imports: [
     BrowserModule
