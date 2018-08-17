@@ -4,14 +4,16 @@
     <button class="top-button" (click)="clickMenu('default')">JJ's Menu</button>
     <button class="top-button">Catering</button><br>
 
-    <button class="menu-button" (click)="clickMenu('favorites')">Favorites</button>
-    <div *ngIf="childMenuSelection === 'favorites'">
-      <p>Placeholder</p>
+    <button class="menu-button" (click)="clickMenu('favorite')">Favorites</button>
+    <div *ngIf="childMenuSelection === 'favorite'">
+      <button class="sandwich-button" *ngFor="let sandwich of childSandwichList | sandwichtype:filterByType">#{{sandwich.menuId}} {{sandwich.realName}}<br>
+      {{sandwich.unwichCal}}-{{sandwich.wheatCal}} | {{sandwich.totalCal}} Cal<br>
+      {{sandwich.codeName}} {{sandwich.ingredients}}</button>
     </div><br>
 
-    <button class="menu-button" (click)="clickMenu('classics')">Classics</button>
-    <div *ngIf="childMenuSelection === 'classics'">
-        <button class="sandwich-button" *ngFor="let sandwich of childSandwichList">#{{sandwich.menuId}} {{sandwich.realName}}<br>
+    <button class="menu-button" (click)="clickMenu('classic')">Classics</button>
+    <div *ngIf="childMenuSelection === 'classic'">
+        <button class="sandwich-button" *ngFor="let sandwich of childSandwichList | sandwichtype:filterByType">#{{sandwich.menuId}} {{sandwich.realName}}<br>
         {{sandwich.unwichCal}}-{{sandwich.wheatCal}} | {{sandwich.totalCal}} Cal<br>
         {{sandwich.codeName}} {{sandwich.ingredients}}</button>
     </div><br>
@@ -21,8 +23,8 @@
       <p>Placeholder</p>
     </div><br>
 
-    <button class="menu-button" (click)="clickMenu('slims')">Plain Slims®</button>
-    <div *ngIf="childMenuSelection === 'slims'">
+    <button class="menu-button" (click)="clickMenu('slim')">Plain Slims®</button>
+    <div *ngIf="childMenuSelection === 'slim'">
       <p>Placeholder</p>
     </div>
   </div>
@@ -34,13 +36,13 @@
       <img src='./../assets/freak_yeah_menu.jpg'>
     </div>
 
-    <div *ngIf="childMenuSelection === 'favorites'">
+    <div *ngIf="childMenuSelection === 'favorite'">
       <h4>Jimmy John's Menu</h4>
       <p>Browse the menu at left and add items to your meal.</p>
       <img src='./../assets/clubs_category_photo.jpg'>
     </div>
 
-    <div *ngIf="childMenuSelection === 'classics'">
+    <div *ngIf="childMenuSelection === 'classic'">
       <h4>Jimmy John's Menu</h4>
       <p>Browse the menu at left and add items to your meal.</p>
       <img src='./../assets/vito.jpg'>
@@ -52,7 +54,7 @@
       <img src='./../assets/gargantuan.jpg'>
     </div>
 
-    <div *ngIf="childMenuSelection === 'slims'">
+    <div *ngIf="childMenuSelection === 'slim'">
       <h4>Jimmy John's Menu</h4>
       <p>Browse the menu at left and add items to your meal.</p>
       <img src='./../assets/slim.jpg'>

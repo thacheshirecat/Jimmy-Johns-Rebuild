@@ -15,8 +15,11 @@ export class MenuListComponent
   @Output() menuClickSender = new EventEmitter();
   @Output() sandwichClickSender = new EventEmitter();
 
+  filterByType: string;
+
   clickMenu(category: string)
   {
+    this.filterByType = category;
     this.menuClickSender.emit(category);
   }
   clickSandwich(sandwich: string)
