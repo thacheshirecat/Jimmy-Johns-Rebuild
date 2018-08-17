@@ -8,7 +8,7 @@ import { Sandwich } from './models/sandwich.model';
 })
 export class AppComponent
 {
-  masterPageSelection: string = 'menu-page';
+  masterPageSelection: string = 'splash-page';
   masterMenuSelection: string = 'default';
   masterSandwichSelection: string = 'none';
   masterSandwichList: Sandwich[] =
