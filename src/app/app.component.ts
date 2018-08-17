@@ -8,6 +8,7 @@ import { Component } from '@angular/core';
 export class AppComponent
 {
   masterPageSelection: string = 'menu-page';
+  masterMenuSelection: string = 'default';
 
   viewSelect(newView: string)
   {

@@ -1,12 +1,32 @@
+.top-button
+{
+  margin-left: 15px;
+}
+.menu-wrap
+{
+  min-width: 273px;
+  width: 20%;
+  float: left;
+  border-right: 1px solid grey;
+  margin: 0 -1px 20px 0;
+}
+#menu-details
+{
+  display: block;
+  float: left;
+  border-left: 1px solid #cacaca;
+  max-width: 686px;
+  width: 50%;
+  padding: 15px 0 0 15px;
+  margin-bottom: 20px;
+}
 .accordion
 {
     background-color: #eee;
     color: #444;
     cursor: pointer;
     padding: 18px;
-    width: 15%;
-    text-align: left;
-    border: none;
+    text-align: center;
     outline: none;
     transition: 0.4s;
 }

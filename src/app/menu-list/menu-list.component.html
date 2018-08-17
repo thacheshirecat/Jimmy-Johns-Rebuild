@@ -1,9 +1,28 @@
 <div *ngIf="childPageSelection === 'menu-page'">
-<button>JJ's Menu</button>
-<button>Catering</button><br>
-<button class="accordion" (click)="clickMenu('favorites')">Favorites</button>
-<div class="panel">
-  <p>Placeholder for Routing that will make according function</p>
-</div>
 
+
+  <div class="menu-wrap">
+    <button class="top-button">JJ's Menu</button>
+    <button class="top-button">Catering</button><br>
+    <button class="accordion" (click)="clickMenu('favorites')">Favorites</button>
+    <div class="panel">
+      <p>Placeholder for when Routing add function to accordian</p>
+    </div><br>
+    <button class="accordion" (click)="clickMenu('classics')">Classics</button>
+    <div class="panel">
+      <p>Placeholder for when Routing add function to accordian</p>
+    </div><br>
+    <button class="accordion" (click)="clickMenu('gargantuan')">The J.J. Gargantuan®</button>
+    <div class="panel">
+      <p>Placeholder for when Routing add function to accordian</p>
+    </div><br>
+    <button class="accordion" (click)="clickMenu('slims')">Slims</button>
+    <div class="panel">
+      <p>Placeholder for when Routing add function to accordian</p>
+    </div>
+  </div>
+  <div id="menu-details">
+    <p>hello<p>
+    <img src='./../assets/jimmyjohns_logo.png'>
+  </div>
 </div>

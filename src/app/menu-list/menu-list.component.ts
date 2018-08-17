@@ -8,6 +8,7 @@ import { Component, Input, Output, EventEmitter } from '@angular/core';
 export class MenuListComponent
 {
   @Input() childPageSelection: string;
+  @Input() childMenuSelection: string;
   @Output() clickSender = new EventEmitter();
 
   clickMenu(category: string)
