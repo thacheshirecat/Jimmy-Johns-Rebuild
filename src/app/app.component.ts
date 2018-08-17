@@ -19,6 +19,7 @@ export class AppComponent
 
   viewSelect(newView: string)
   {
+    console.log(this.masterSandwichList[0].realName);
     this.masterPageSelection = newView;
     this.masterMenuSelection = 'default';
   }

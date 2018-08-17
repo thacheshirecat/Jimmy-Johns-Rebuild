@@ -1,4 +1,4 @@
 export class Sandwich
 {
-  constructor(menuId: number, realName: string, codeName: string, totalCal: number, unwichCal: number, frenchCal: number, wheatCal: number, ingredients: string[], type: string) {}
+  constructor(public menuId: number, public realName: string, public codeName: string, public totalCal: number, public unwichCal: number, public frenchCal: number, public wheatCal: number, public ingredients: string[], public type: string) {}
 }
