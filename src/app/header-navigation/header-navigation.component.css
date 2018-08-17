@@ -1,0 +1,17 @@
+#logo
+{
+  height: 150px;
+  margin-top: 25px;
+}
+#order-logo
+{
+  height: 75px;
+}
+#header-or
+{
+  display: inline;
+}
+label
+{
+  display: block;
+}
