@@ -1,4 +1,5 @@
 import { Component, Input, Output, EventEmitter } from '@angular/core';
+import { Sandwich } from './../models/sandwich.model';
 
 @Component({
   selector: 'app-menu-list',
@@ -9,8 +10,8 @@ export class MenuListComponent
 {
   @Input() childPageSelection: string;
   @Input() childMenuSelection: string;
-  @Input() childSandwhichList: string[];
-  @Input() childSandwhichSelection: string;
+  @Input() childSandwichList: string[];
+  @Input() childSandwichSelection: string;
   @Output() menuClickSender = new EventEmitter();
   @Output() sandwichClickSender = new EventEmitter();
 

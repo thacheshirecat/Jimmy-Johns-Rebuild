@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Sandwich } from './../models/sandwich.model';
 
 @Component({
   selector: 'app-footer-navigation',

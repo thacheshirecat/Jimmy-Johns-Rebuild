@@ -1,4 +1,5 @@
 import { Component, Input } from '@angular/core';
+import { Sandwich } from './../models/sandwich.model';
 
 @Component({
   selector: 'app-splash-page',

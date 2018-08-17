@@ -1,4 +1,5 @@
 import { Component, Output, EventEmitter } from '@angular/core';
+import { Sandwich } from './../models/sandwich.model';
 
 @Component({
   selector: 'app-header-navigation',

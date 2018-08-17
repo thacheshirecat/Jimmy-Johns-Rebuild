@@ -1,45 +1,55 @@
 <div *ngIf="childPageSelection === 'menu-page'">
+
   <div class="menu-wrap">
     <button class="top-button" (click)="clickMenu('default')">JJ's Menu</button>
     <button class="top-button">Catering</button><br>
+
     <button class="menu-button" (click)="clickMenu('favorites')">Favorites</button>
     <div *ngIf="childMenuSelection === 'favorites'">
       <p>Placeholder</p>
     </div><br>
+
     <button class="menu-button" (click)="clickMenu('classics')">Classics</button>
     <div *ngIf="childMenuSelection === 'classics'">
-        <li *ngFor="let sandwich of childSandwhichList">{{sandwich.realName}}</li>
+        <li *ngFor="let sandwich of childSandwichList">{{sandwich.realName}} {{sandwich.codeName}}</li>
     </div><br>
+
     <button class="menu-button" (click)="clickMenu('gargantuan')">The J.J. Gargantuan®</button>
     <div *ngIf="childMenuSelection === 'gargantuan'">
       <p>Placeholder</p>
     </div><br>
+
     <button class="menu-button" (click)="clickMenu('slims')">Plain Slims®</button>
     <div *ngIf="childMenuSelection === 'slims'">
       <p>Placeholder</p>
     </div>
   </div>
+
   <div id="menu-details">
-    <div *ngIf="childMenuSelection === 'default' && childSandwhichSelection === 'none'">
+    <div *ngIf="childMenuSelection === 'default' && childSandwichSelection === 'none'">
       <h4>Jimmy John's Menu</h4>
       <p>Browse the menu at left and add items to your meal.</p>
       <img src='./../assets/freak_yeah_menu.jpg'>
     </div>
+
     <div *ngIf="childMenuSelection === 'favorites'">
       <h4>Jimmy John's Menu</h4>
       <p>Browse the menu at left and add items to your meal.</p>
       <img src='./../assets/clubs_category_photo.jpg'>
     </div>
+
     <div *ngIf="childMenuSelection === 'classics'">
       <h4>Jimmy John's Menu</h4>
       <p>Browse the menu at left and add items to your meal.</p>
       <img src='./../assets/vito.jpg'>
     </div>
+
     <div *ngIf="childMenuSelection === 'gargantuan'">
       <h4>Jimmy John's Menu</h4>
       <p>Browse the menu at left and add items to your meal.</p>
       <img src='./../assets/gargantuan.jpg'>
     </div>
+
     <div *ngIf="childMenuSelection === 'slims'">
       <h4>Jimmy John's Menu</h4>
       <p>Browse the menu at left and add items to your meal.</p>
