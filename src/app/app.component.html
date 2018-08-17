@@ -1,5 +1,5 @@
 <div class="container">
-  <app-header-navigation></app-header-navigation>
+  <app-header-navigation (clickSender)="viewSelect($event)"></app-header-navigation>
   <app-splash-page [childPageSelection]='pageSelection'></app-splash-page>
   <app-menu-list [childPageSelection]='pageSelection'></app-menu-list>
   <app-footer-navigation></app-footer-navigation>
