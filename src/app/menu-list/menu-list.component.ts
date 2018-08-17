@@ -10,7 +10,7 @@ export class MenuListComponent
 {
   @Input() childPageSelection: string;
   @Input() childMenuSelection: string;
-  @Input() childSandwichList: string[];
+  @Input() childSandwichList: Sandwich[];
   @Input() childSandwichSelection: string;
   @Output() menuClickSender = new EventEmitter();
   @Output() sandwichClickSender = new EventEmitter();
