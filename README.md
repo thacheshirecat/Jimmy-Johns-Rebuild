@@ -19,4 +19,9 @@ This application is an attempt to recreate the existing Jimmy John's website usi
 * It should contain a store locator that takes in the users city and state or zip code and lists out the closest stores
 * It should contain an ordering section where menu items that a user wants to order should be displayed and a total cost shown.
 
-#### Components
+#### Potential Components
+ * Header Component
+ * Footer Component
+ * Splash Page Component
+ * Menu Component
+ * About Us Component
