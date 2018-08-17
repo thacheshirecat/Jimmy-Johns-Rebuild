@@ -7,10 +7,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent
 {
-  pageSelection: string = 'splash-page';
+  masterPageSelection: string = 'menu-page';
 
   viewSelect(newView: string)
   {
-    this.pageSelection = newView;
+    this.masterPageSelection = newView;
   }
 }
