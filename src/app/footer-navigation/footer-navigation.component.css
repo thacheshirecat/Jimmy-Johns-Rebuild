@@ -1,0 +1,42 @@
+#footer
+{
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+}
+.footer-navigation-option
+{
+  font-family: 'Smart Sans W01 Bold',impact,'arial narrow bold',arial,sans-serif;
+  color: #656565;
+  font-size: 15px;
+  font-weight: bold;
+  display: inline;
+  margin-left: 10px;
+}
+.footer-dot
+{
+  font-family: 'Smart Sans W01 Bold',impact,'arial narrow bold',arial,sans-serif;
+  color: #656565;
+  font-size: 15px;
+  font-weight: bold;
+  display: inline;
+  margin-left: 10px;
+}
+#first-footer-image
+{
+  float:left;
+  margin-left: 600px;
+  position: fixed;
+}
+#footer-image
+{
+  float: left;
+  margin-left: 750px;
+  position: fixed;
+}
+#JJlicensing
+{
+  font-size: 10px;
+}
