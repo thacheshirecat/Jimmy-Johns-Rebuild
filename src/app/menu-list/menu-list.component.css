@@ -5,11 +5,13 @@
   font-family: 'Rockwell W01 Bold',Georgia,serif;
   color: black;
   font-weight: bold;
+  cursor: pointer;
+  outline: none;
 }
 .menu-wrap
 {
   min-width: 273px;
-  width: 20%;
+  width: 10%;
   float: left;
   border-right: 1px solid grey;
   margin: 0 -1px 20px 0;
@@ -18,29 +20,20 @@
 {
   display: block;
   float: left;
-  border-top: 1px solid #cacaca;
-  border-left: 1px solid #cacaca;
+  border-top: 1px solid grey;
+  border-left: 1px solid grey;
   max-width: 686px;
   width: 50%;
   padding: 15px 0 0 15px;
   margin-bottom: 20px;
 }
-.accordion
+.menu-button
 {
-    background-color: white;
-    font-family: 'Rockwell W01 Bold',Georgia,serif;
-    color: #d42029;
-    font-weight: bold;
-    cursor: pointer;
-    padding: 18px;
-    text-align: center;
-    outline: none;
-    transition: 0.4s;
-}
-.panel
-{
-    padding: 0 18px;
-    background-color: white;
-    display: none;
-    overflow: hidden;
+  background-color: white;
+  font-family: 'Rockwell W01 Bold',Georgia,serif;
+  color: #d42029;
+  font-weight: bold;
+  cursor: pointer;
+  padding: 10px;
+  outline: none;
 }

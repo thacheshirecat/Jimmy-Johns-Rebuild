@@ -10,10 +10,16 @@ export class MenuListComponent
   @Input() childPageSelection: string;
   @Input() childMenuSelection: string;
   @Input() childSandwhichList: string[];
-  @Output() clickSender = new EventEmitter();
+  @Input() childSandwhichSelection: string;
+  @Output() menuClickSender = new EventEmitter();
+  @Output() sandwichClickSender = new EventEmitter();
 
   clickMenu(category: string)
   {
-    this.clickSender.emit(category);
+    this.menuClickSender.emit(category);
+  }
+  clickSandwich(sandwich: string)
+  {
+    this.sandwichClickSender.emit(sandwich);
   }
 }

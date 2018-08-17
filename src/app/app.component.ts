@@ -10,6 +10,7 @@ export class AppComponent
 {
   masterPageSelection: string = 'menu-page';
   masterMenuSelection: string = 'default';
+  masterSandwichSelection: string = 'none';
   masterSandwichList =
   [
     new Sandwich(1, 'HAM & PROVOLONE', 'THE PEPE®', 1250, 350, 630, 710, ['lettuce', 'tomato', 'mayo'], 'classic'),
@@ -19,6 +20,7 @@ export class AppComponent
   viewSelect(newView: string)
   {
     this.masterPageSelection = newView;
+    this.masterMenuSelection = 'default';
   }
   menuSelect(menuOption: string)
   {
