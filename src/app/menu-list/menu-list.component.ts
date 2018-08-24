@@ -1,5 +1,6 @@
 import { Component, Input, Output, EventEmitter } from '@angular/core';
 import { Sandwich } from './../models/sandwich.model';
+import { Side } from './../models/side.model';
 import { AngularFireDatabase, FirebaseListObservable } from 'angularfire2/database';
 
 @Component({
@@ -17,14 +18,18 @@ export class MenuListComponent
   // @Output() sandwichClickSender = new EventEmitter();
 
   sandwichList: FirebaseListObservable<any[]>;
+  sideList: FirebaseListObservable<any[]>;
   menuSelection: string = 'default';
   sandwichSelection: string = 'none';
+  sideSelection: string = 'none';
   selectedSandwich: Sandwich;
+  selectedSide: Side;
   filterByType: string;
 
   constructor(private database: AngularFireDatabase)
   {
     this.sandwichList = database.list('sandwiches');
+    this.sideList = database.list('sides');
   }
   clickMenu(category: string)
   {

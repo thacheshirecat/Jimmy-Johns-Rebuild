@@ -47,8 +47,17 @@
       <button class="sandwich-button" *ngFor="let sandwich of sandwichList | async | sandwichtype:filterByType" (click)="viewSandwich(sandwich)">{{sandwich.realName}}<br>
       {{sandwich.unwichCal}}-{{sandwich.wheatCal}} Cal<br>
       <span class="sandwich-ingredients">{{sandwich.codeName}} {{sandwich.ingredients}}</span></button>
+    </div><br>
+
+    <button class="menu-button-sides" (click)="clickMenu('sides')">Sides</button>
+    <div *ngIf="menuSelection === 'sides'">
+      <button class="sandwich-button" *ngFor="let side of sidesList | async" (click)="viewSide(side)">{{sandwich.realName}}<br>
+      {{sandwich.unwichCal}}-{{sandwich.wheatCal}} Cal<br>
+      <span class="sandwich-ingredients">{{sandwich.codeName}} {{sandwich.ingredients}}</span></button>
     </div>
   </div>
+
+
 
   <div id="menu-details">
     <div *ngIf="menuSelection === 'default' && sandwichSelection === 'none'">
@@ -79,6 +88,12 @@
       <h4>Jimmy John's Menu</h4>
       <p>Browse the menu at left and add items to your meal.</p>
       <img src='./../assets/slim.jpg'>
+    </div>
+
+    <div *ngIf="menuSelection === 'sides'">
+      <h4>Jimmy John's Menu</h4>
+      <p>Browse the menu at left and add items to your meal.</p>
+      <img src='./../assets/freak_yeah_menu.jpg'>
     </div>
 
     <div *ngIf="sandwichSelection === 'selected'">

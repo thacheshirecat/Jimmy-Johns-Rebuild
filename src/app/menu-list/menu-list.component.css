@@ -37,6 +37,15 @@
   padding: 10px;
   outline: none;
 }
+.menu-button-sides
+{
+  background-color: white;
+  font-family: 'Rockwell W01 Bold',Georgia,serif;
+  font-weight: bold;
+  cursor: pointer;
+  padding: 10px;
+  outline: none;
+}
 .sandwich-button
 {
   width: 271px;
