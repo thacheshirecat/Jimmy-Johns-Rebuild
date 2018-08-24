@@ -1,0 +1,64 @@
+{
+  "sandwiches":
+  [
+    {
+      "menuId": 1,
+      "realName": "HAM & PROVOLONE",
+      "codeName": "THE PEPE®",
+      "totalCal": 1250,
+      "unwichCal": 350,
+      "frenchCal": 630,
+      "wheatCal": 710,
+      "ingredients": ["lettuce", "tomato", "mayo"],
+      "type": ""
+    },
+    {
+      "menuId": "",
+      "realName": "",
+      "codeName": "",
+      "totalCal": 0,
+      "unwichCal": 0,
+      "frenchCal": 0,
+      "wheatCal": 0,
+      "ingredients": [],
+      "type": ""
+    },
+    {
+      "menuId": "",
+      "realName": "",
+      "codeName": "",
+      "totalCal": 0,
+      "unwichCal": 0,
+      "frenchCal": 0,
+      "wheatCal": 0,
+      "ingredients": [],
+      "type": ""
+    },
+    {
+      "menuId": "",
+      "realName": "",
+      "codeName": "",
+      "totalCal": 0,
+      "unwichCal": 0,
+      "frenchCal": 0,
+      "wheatCal": 0,
+      "ingredients": [],
+      "type": ""
+    },
+    {
+      "menuId": "",
+      "realName": "",
+      "codeName": "",
+      "totalCal": 0,
+      "unwichCal": 0,
+      "frenchCal": 0,
+      "wheatCal": 0,
+      "ingredients": [],
+      "type": ""
+    }
+  ],
+  "products":
+  [
+
+  ]
+}
