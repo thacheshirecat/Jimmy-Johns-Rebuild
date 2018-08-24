@@ -1,3 +1,12 @@
+/* Header Styling */
+#site-header
+{
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  text-align: center;
+}
 #logo
 {
   height: 150px;
@@ -31,4 +40,107 @@
 {
   cursor: pointer;
   color: #656565;
+}
+/* Footer Styling */
+#footer
+{
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+}
+.footer-navigation-option
+{
+  font-family: 'Smart Sans W01 Bold',impact,'arial narrow bold',arial,sans-serif;
+  color: #656565;
+  font-size: 15px;
+  font-weight: bold;
+  display: inline;
+  margin-left: 10px;
+}
+.footer-dot
+{
+  font-family: 'Smart Sans W01 Bold',impact,'arial narrow bold',arial,sans-serif;
+  color: #656565;
+  font-size: 15px;
+  font-weight: bold;
+  display: inline;
+  margin-left: 10px;
+}
+#first-footer-image
+{
+  float:left;
+  margin-left: 600px;
+  position: fixed;
+}
+#footer-image
+{
+  float: left;
+  margin-left: 750px;
+  position: fixed;
+}
+#JJlicensing
+{
+  font-size: 10px;
+}
+/* Splash page styling */
+#splash-ground
+{
+  width: 100%;
+  min-width: 3000px;
+  margin: auto;
+  left: 50%;
+  position: relative;
+  transform: translateX(-50%);
+}
+/* Menu styling */
+.top-button
+{
+  margin-left: 15px;
+  background-color: white;
+  font-family: 'Rockwell W01 Bold',Georgia,serif;
+  color: black;
+  font-weight: bold;
+  cursor: pointer;
+  outline: none;
+}
+.menu-wrap
+{
+  min-width: 273px;
+  width: 10%;
+  float: left;
+  border-right: 1px solid grey;
+  margin: 0 -1px 20px 0;
+}
+#menu-details
+{
+  display: block;
+  float: left;
+  border-top: 1px solid grey;
+  border-left: 1px solid grey;
+  max-width: 686px;
+  width: 50%;
+  padding: 15px 0 0 15px;
+  margin-bottom: 20px;
+}
+.menu-button
+{
+  background-color: white;
+  font-family: 'Rockwell W01 Bold',Georgia,serif;
+  color: #d42029;
+  font-weight: bold;
+  cursor: pointer;
+  padding: 10px;
+  outline: none;
+}
+.sandwich-button
+{
+  background-color: white;
+  font-family: 'Rockwell W01 Bold',Georgia,serif;
+  color: black;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 12px;
+  outline: none;
 }
