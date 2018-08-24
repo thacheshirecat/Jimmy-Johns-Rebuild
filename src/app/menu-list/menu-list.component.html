@@ -23,7 +23,7 @@
 
     <button class="menu-button" (click)="clickMenu('favorite')">Favorites</button>
     <div *ngIf="menuSelection === 'favorite'">
-      <button class="sandwich-button" *ngFor="let sandwich of sandwichList | async | sandwichtype:filterByType">#{{sandwich.menuId}} {{sandwich.realName}}<br>
+      <button class="sandwich-button" *ngFor="let sandwich of sandwichList | async | sandwichtype:filterByType" (click)="viewSandwich(sandwich)">#{{sandwich.menuId}} {{sandwich.realName}}<br>
       {{sandwich.unwichCal}}-{{sandwich.wheatCal}} | {{sandwich.totalCal}} Cal<br>
       {{sandwich.codeName}} {{sandwich.ingredients}}</button>
     </div><br>
@@ -37,15 +37,15 @@
 
     <button class="menu-button" (click)="clickMenu('gargantuan')">The J.J. Gargantuan®</button>
     <div *ngIf="menuSelection === 'gargantuan'">
-      <button class="sandwich-button" *ngFor="let sandwich of sandwichList | async | sandwichtype:filterByType">#{{sandwich.menuId}} {{sandwich.realName}}<br>
+      <button class="sandwich-button" *ngFor="let sandwich of sandwichList | async | sandwichtype:filterByType" (click)="viewSandwich(sandwich)">{{sandwich.realName}}<br>
       {{sandwich.unwichCal}}-{{sandwich.wheatCal}} | {{sandwich.totalCal}} Cal<br>
       {{sandwich.codeName}} {{sandwich.ingredients}}</button>
     </div><br>
 
     <button class="menu-button" (click)="clickMenu('slim')">Plain Slims®</button>
     <div *ngIf="menuSelection === 'slim'">
-      <button class="sandwich-button" *ngFor="let sandwich of sandwichList | async | sandwichtype:filterByType">#{{sandwich.menuId}} {{sandwich.realName}}<br>
-      {{sandwich.unwichCal}}-{{sandwich.wheatCal}} | {{sandwich.totalCal}} Cal<br>
+      <button class="sandwich-button" *ngFor="let sandwich of sandwichList | async | sandwichtype:filterByType" (click)="viewSandwich(sandwich)">{{sandwich.realName}}<br>
+      {{sandwich.unwichCal}}-{{sandwich.wheatCal}} Cal<br>
       {{sandwich.codeName}} {{sandwich.ingredients}}</button>
     </div>
   </div>
@@ -80,6 +80,16 @@
       <p>Browse the menu at left and add items to your meal.</p>
       <img src='./../assets/slim.jpg'>
     </div>
+
+    <div *ngIf="sandwichSelection === 'selected'">
+      <h1 class="menu-item-name"><span *ngIf="selectedSandwich.menuId != null">#{{selectedSandwich.menuId}}</span> {{selectedSandwich.realName}}<br>
+      <span class="cal-info">Unwich ® {{selectedSandwich.unwichCal}} Cal</span><span class="cal-info">French {{selectedSandwich.frenchCal}} Cal</span><span class="cal-info">Wheat {{selectedSandwich.wheatCal}} Cal</span></h1>
+      <p class="menu-item-ingredients">{{selectedSandwich.codeName}} {{selectedSandwich.ingredients}}</p>
+      <button class="btn btn-danger">Customize Sandwich</button>
+      <button class="btn btn-danger">Order Item</button>
+      <img src="'./../assets/' + selectedSandwich.imageLink">
+    </div>
+
   </div>
 
 <div id='footer'>

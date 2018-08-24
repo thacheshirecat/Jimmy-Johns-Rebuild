@@ -10,7 +10,9 @@
       "frenchCal": 630,
       "wheatCal": 710,
       "ingredients": ["lettuce", "tomato", "mayo"],
-      "type": "classic"
+      "type": "classic",
+      "cost": "0",
+      "imageLink": ""
     },
     {
       "menuId": 2,
@@ -21,7 +23,9 @@
       "frenchCal": 540,
       "wheatCal": 620,
       "ingredients": ["lettuce", "tomato", "mayo"],
-      "type": "classic"
+      "type": "classic",
+      "cost": "0",
+      "imageLink": ""
     },
     {
       "menuId": 8,
@@ -32,7 +36,9 @@
       "frenchCal": 800,
       "wheatCal": 830,
       "ingredients": ["Dijon", "lettuce", "tomato", "mayo"],
-      "type": "favorite"
+      "type": "favorite",
+      "cost": "0",
+      "imageLink": ""
     },
     {
       "menuId": null,
@@ -43,7 +49,9 @@
       "frenchCal": 1070,
       "wheatCal": 1100,
       "ingredients": ["onion", "lettuce", "tomato", "mayo", "oil & vinegar", "oregano-basil"],
-      "type": "gargantuan"
+      "type": "gargantuan",
+      "cost": "0",
+      "imageLink": ""
     },
     {
       "menuId": null,
@@ -54,7 +62,9 @@
       "frenchCal": 540,
       "wheatCal": 570,
       "ingredients": ["ham", "cheese"],
-      "type": "slim"
+      "type": "slim",
+      "cost": "0",
+      "imageLink": ""
     }
   ],
   "products":

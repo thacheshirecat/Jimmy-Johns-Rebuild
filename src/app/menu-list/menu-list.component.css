@@ -47,3 +47,28 @@
   font-size: 12px;
   outline: none;
 }
+.menu-item-name
+{
+  margin: 0 0 9px;
+  font-size: 24px;
+  line-height: 24px;
+  font-family: 'Smart Sans W01 Bold', impact, 'arial narrow bold', arial,sans-serif;
+}
+.cal-info
+{
+  font-family: 'Rockwell W01',Georgia,serif;
+  display: inline-block;
+  font-size: 16px;
+  padding: 5px 5px 5px 0;
+  margin: 1px;
+  line-height: 1;
+  font-weight: 100;
+}
+.cal-info:not(:last-child)
+{
+  border-right: 1px solid black;
+}
+.menu-item-ingredients
+{
+  font-family: 'Rockwell W01 Bold',Georgia,serif;
+}

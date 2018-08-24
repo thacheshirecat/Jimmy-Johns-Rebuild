@@ -19,11 +19,24 @@ export class MenuListComponent
   sandwichList: FirebaseListObservable<any[]>;
   menuSelection: string = 'default';
   sandwichSelection: string = 'none';
+  selectedSandwich: Sandwich;
   filterByType: string;
 
   constructor(private database: AngularFireDatabase)
   {
     this.sandwichList = database.list('sandwiches');
+  }
+  clickMenu(category: string)
+  {
+    this.filterByType = category;
+    this.menuSelection = category;
+    this.sandwichSelection = 'none';
+    // this.menuClickSender.emit(category);
+  }
+  viewSandwich(sandwich)
+  {
+    this.selectedSandwich = sandwich;
+    this.sandwichSelection = 'selected';
   }
 
   getSandwiches()
@@ -31,12 +44,7 @@ export class MenuListComponent
     return this.sandwichList;
   }
 
-  clickMenu(category: string)
-  {
-    this.filterByType = category;
-    this.menuSelection = category;
-    // this.menuClickSender.emit(category);
-  }
+
   clickSandwich(sandwich: string)
   {
     this.sandwichSelection = sandwich;
