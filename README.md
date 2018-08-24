@@ -10,6 +10,7 @@ This application is an attempt to recreate the existing Jimmy John's website usi
   * Clone repository from https://github.com/thacheshirecat/Jimmy-Johns-Rebuild
   * Navigate to the jimmy-johns-rebuild directory in your console
   * Execute 'npm install'
+  * Obtain an API key from https://jimmy-johns-rebuild.firebaseio.com/, and create an api-keys.ts file to house the information as masterFirebaseConfig
   * Execute 'ng serve' and open your browser to localhost:4200
 
 #### Specs

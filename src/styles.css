@@ -42,7 +42,7 @@
   color: #656565;
 }
 /* Footer Styling */
-#footer
+.site-footer
 {
   position: fixed;
   left: 0;
@@ -143,4 +143,8 @@
   cursor: pointer;
   font-size: 12px;
   outline: none;
+}
+.sandwich-ingredients
+{
+  font-size: 8px;
 }

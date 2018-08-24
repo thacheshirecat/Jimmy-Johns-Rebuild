@@ -38,7 +38,7 @@
       "ingredients": ["Dijon", "lettuce", "tomato", "mayo"],
       "type": "favorite",
       "cost": "0",
-      "imageLink": ""
+      "imageLink": "08_billyclub.jpg"
     },
     {
       "menuId": null,
@@ -65,6 +65,19 @@
       "type": "slim",
       "cost": "0",
       "imageLink": ""
+    },
+    {
+      "menuId": 9,
+      "realName": "BIG ITALIAN",
+      "codeName": "ITALIAN NIGHT CLUB®",
+      "totalCal": 1890,
+      "unwichCal": 560,
+      "frenchCal": 920,
+      "wheatCal": 950,
+      "ingredients": ["salami", "capicola", "ham", "provolone", "lettuce", "tomato", "onion", "mayo", "oil & vinegar", "oregano-basil"],
+      "type": "favorite",
+      "cost": "0",
+      "imageLink": "09_italiannightclub.jpg"
     }
   ],
   "products":

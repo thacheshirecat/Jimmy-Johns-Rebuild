@@ -39,6 +39,7 @@
 }
 .sandwich-button
 {
+  width: 271px;
   background-color: white;
   font-family: 'Rockwell W01 Bold',Georgia,serif;
   color: black;
@@ -71,4 +72,8 @@
 .menu-item-ingredients
 {
   font-family: 'Rockwell W01 Bold',Georgia,serif;
+}
+.meal-div
+{
+  border: solid 1px black;
 }

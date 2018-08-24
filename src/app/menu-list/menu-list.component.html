@@ -25,28 +25,28 @@
     <div *ngIf="menuSelection === 'favorite'">
       <button class="sandwich-button" *ngFor="let sandwich of sandwichList | async | sandwichtype:filterByType" (click)="viewSandwich(sandwich)">#{{sandwich.menuId}} {{sandwich.realName}}<br>
       {{sandwich.unwichCal}}-{{sandwich.wheatCal}} | {{sandwich.totalCal}} Cal<br>
-      {{sandwich.codeName}} {{sandwich.ingredients}}</button>
+      <span class="sandwich-ingredients">{{sandwich.codeName}} {{sandwich.ingredients}}</span></button>
     </div><br>
 
     <button class="menu-button" (click)="clickMenu('classic')">Classics</button>
     <div *ngIf="menuSelection === 'classic'">
         <button class="sandwich-button" *ngFor="let sandwich of sandwichList | async | sandwichtype:filterByType" (click)="viewSandwich(sandwich)">#{{sandwich.menuId}} {{sandwich.realName}}<br>
         {{sandwich.unwichCal}}-{{sandwich.wheatCal}} | {{sandwich.totalCal}} Cal<br>
-        {{sandwich.codeName}} {{sandwich.ingredients}}</button>
+        <span class="sandwich-ingredients">{{sandwich.codeName}} {{sandwich.ingredients}}</span></button>
     </div><br>
 
     <button class="menu-button" (click)="clickMenu('gargantuan')">The J.J. Gargantuan®</button>
     <div *ngIf="menuSelection === 'gargantuan'">
       <button class="sandwich-button" *ngFor="let sandwich of sandwichList | async | sandwichtype:filterByType" (click)="viewSandwich(sandwich)">{{sandwich.realName}}<br>
       {{sandwich.unwichCal}}-{{sandwich.wheatCal}} | {{sandwich.totalCal}} Cal<br>
-      {{sandwich.codeName}} {{sandwich.ingredients}}</button>
+      <span class="sandwich-ingredients">{{sandwich.codeName}} {{sandwich.ingredients}}</span></button>
     </div><br>
 
     <button class="menu-button" (click)="clickMenu('slim')">Plain Slims®</button>
     <div *ngIf="menuSelection === 'slim'">
       <button class="sandwich-button" *ngFor="let sandwich of sandwichList | async | sandwichtype:filterByType" (click)="viewSandwich(sandwich)">{{sandwich.realName}}<br>
       {{sandwich.unwichCal}}-{{sandwich.wheatCal}} Cal<br>
-      {{sandwich.codeName}} {{sandwich.ingredients}}</button>
+      <span class="sandwich-ingredients">{{sandwich.codeName}} {{sandwich.ingredients}}</span></button>
     </div>
   </div>
 
@@ -87,32 +87,39 @@
       <p class="menu-item-ingredients">{{selectedSandwich.codeName}} {{selectedSandwich.ingredients}}</p>
       <button class="btn btn-danger">Customize Sandwich</button>
       <button class="btn btn-danger">Order Item</button>
-      <img src="'./../assets/' + selectedSandwich.imageLink">
+      <img src="./../assets/{{selectedSandwich.imageLink}}">
+      <button class="btn btn-danger">Add To Meal</button>
+      <div class="meal-div">
+        Your Selected Menu Items
+Add any sandwich, side item, or drink by clicking on the 'Add to Meal' button.
+
+Meal items may be added, edited, or deleted from this menu.
+      </div>
     </div>
-
   </div>
 
-<div id='footer'>
-  <div id='footer-navigation'>
-    <p class='footer-navigation-option'>Feedback</p>
-    <p class='footer-dot'>•</p>
-    <p class='footer-navigation-option'>FAQ's</p>
-    <p class='footer-dot'>•</p>
-    <p class='footer-navigation-option'>Jobs</p>
-    <p class='footer-dot'>•</p>
-    <p class='footer-navigation-option'>Privacy Policy</p>
-    <p class='footer-dot'>•</p>
-    <p class='footer-navigation-option'>Terms & Conditions</p>
-    <p class='footer-dot'>•</p>
-    <p class='footer-navigation-option'>Owners Site</p>
-    <p class='footer-dot'>•</p>
-    <p class='footer-navigation-option'>Accessibility</p>
-  </div>
-  <div class='row'>
-    <img id='first-footer-image' src='./../assets/app-store.png'>
-    <img id='footer-image' src='./../assets/google-play.png'>
-  </div>
-  <br>
-  <br>
-  <p id='JJlicensing'>©2018 Jimmy John's Franchisor SPV, LLC All Rights Reserved</p>
-</div>
+
+  <footer class='site-footer'>
+    <div id='footer-navigation'>
+      <p class='footer-navigation-option'>Feedback</p>
+      <p class='footer-dot'>•</p>
+      <p class='footer-navigation-option'>FAQ's</p>
+      <p class='footer-dot'>•</p>
+      <p class='footer-navigation-option'>Jobs</p>
+      <p class='footer-dot'>•</p>
+      <p class='footer-navigation-option'>Privacy Policy</p>
+      <p class='footer-dot'>•</p>
+      <p class='footer-navigation-option'>Terms & Conditions</p>
+      <p class='footer-dot'>•</p>
+      <p class='footer-navigation-option'>Owners Site</p>
+      <p class='footer-dot'>•</p>
+      <p class='footer-navigation-option'>Accessibility</p>
+    </div>
+    <div class='row'>
+      <img id='first-footer-image' src='./../assets/app-store.png'>
+      <img id='footer-image' src='./../assets/google-play.png'>
+    </div>
+    <br>
+    <br>
+    <p id='JJlicensing'>©2018 Jimmy John's Franchisor SPV, LLC All Rights Reserved</p>
+  </footer>
