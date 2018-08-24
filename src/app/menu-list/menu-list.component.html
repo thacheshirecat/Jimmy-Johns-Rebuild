@@ -1,4 +1,4 @@
-<a routerLink=""><img id='logo' src='./../assets/jimmyjohns_logo.png' (click)="changeViewClicked('splash-page')"></a>
+<a routerLink=""><img id='logo' src='./../assets/jimmyjohns_logo.png'></a>
 <img id='order-logo' src='./../assets/orderOnlineFlag.png'>
 <button class='btn btn-danger'>Login</button>
 <p id='header-or'>or</p>
@@ -9,7 +9,7 @@
 <button>Pick Up</button>
 
 <div id='header-navigation'>
-  <p class='navigation-option'><a routerLink="menu">Menu</a></p>
+  <a routerLink="menu"><p class='navigation-option'>Menu</p></a>
   <p class='navigation-option'>Find a JJ's</p>
   <p class='navigation-option'>About Us</p>
   <p class='navigation-option'>Gift Cards</p>
@@ -23,7 +23,7 @@
 
     <button class="menu-button" (click)="clickMenu('favorite')">Favorites</button>
     <div *ngIf="childMenuSelection === 'favorite'">
-      <button class="sandwich-button" *ngFor="let sandwich of childSandwichList | sandwichtype:filterByType">#{{sandwich.menuId}} {{sandwich.realName}}<br>
+      <button class="sandwich-button" *ngFor="let sandwich of sandwichList | sandwichtype:filterByType">#{{sandwich.menuId}} {{sandwich.realName}}<br>
       {{sandwich.unwichCal}}-{{sandwich.wheatCal}} | {{sandwich.totalCal}} Cal<br>
       {{sandwich.codeName}} {{sandwich.ingredients}}</button>
     </div><br>

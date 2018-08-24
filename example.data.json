@@ -10,51 +10,51 @@
       "frenchCal": 630,
       "wheatCal": 710,
       "ingredients": ["lettuce", "tomato", "mayo"],
-      "type": ""
+      "type": "classic"
     },
     {
-      "menuId": "",
-      "realName": "",
-      "codeName": "",
-      "totalCal": 0,
-      "unwichCal": 0,
-      "frenchCal": 0,
-      "wheatCal": 0,
-      "ingredients": [],
-      "type": ""
+      "menuId": 2,
+      "realName": "ORIGINAL ROAST BEEF",
+      "codeName": "BIG JOHN®",
+      "totalCal": 1070,
+      "unwichCal": 260,
+      "frenchCal": 540,
+      "wheatCal": 620,
+      "ingredients": ["lettuce", "tomato", "mayo"],
+      "type": "classic"
     },
     {
-      "menuId": "",
-      "realName": "",
-      "codeName": "",
-      "totalCal": 0,
-      "unwichCal": 0,
-      "frenchCal": 0,
-      "wheatCal": 0,
-      "ingredients": [],
-      "type": ""
+      "menuId": 8,
+      "realName": "ROAST BEEF, HAM & PROVOLONE",
+      "codeName": "BILLY CLUB®",
+      "totalCal": 1660,
+      "unwichCal": 440,
+      "frenchCal": 800,
+      "wheatCal": 830,
+      "ingredients": ["Dijon", "lettuce", "tomato", "mayo"],
+      "type": "favorite"
     },
     {
-      "menuId": "",
-      "realName": "",
-      "codeName": "",
-      "totalCal": 0,
-      "unwichCal": 0,
-      "frenchCal": 0,
-      "wheatCal": 0,
-      "ingredients": [],
-      "type": ""
+      "menuId": null,
+      "realName": "SALAMI, CAPICOLA, TURKEY, ROAST BEEF, HAM & PROVOLONE",
+      "codeName": "THE J.J. GARGANTUAN®",
+      "totalCal": 2190,
+      "unwichCal": 710,
+      "frenchCal": 1070,
+      "wheatCal": 1100,
+      "ingredients": ["onion", "lettuce", "tomato", "mayo", "oil & vinegar", "oregano-basil"],
+      "type": "gargantuan"
     },
     {
-      "menuId": "",
-      "realName": "",
-      "codeName": "",
-      "totalCal": 0,
-      "unwichCal": 0,
-      "frenchCal": 0,
-      "wheatCal": 0,
-      "ingredients": [],
-      "type": ""
+      "menuId": null,
+      "realName": "Slim 1",
+      "codeName": null,
+      "totalCal": null,
+      "unwichCal": 190,
+      "frenchCal": 540,
+      "wheatCal": 570,
+      "ingredients": ["ham", "cheese"],
+      "type": "slim"
     }
   ],
   "products":
