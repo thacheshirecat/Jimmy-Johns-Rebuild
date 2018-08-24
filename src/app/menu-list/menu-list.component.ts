@@ -17,6 +17,8 @@ export class MenuListComponent
   // @Output() sandwichClickSender = new EventEmitter();
 
   sandwichList: FirebaseListObservable<any[]>;
+  menuSelection: string = 'default';
+  sandwichSelection: string = 'none';
   filterByType: string;
 
   constructor(private database: AngularFireDatabase)
@@ -32,10 +34,11 @@ export class MenuListComponent
   clickMenu(category: string)
   {
     this.filterByType = category;
+    this.menuSelection = category;
     // this.menuClickSender.emit(category);
   }
   clickSandwich(sandwich: string)
   {
-    // this.sandwichClickSender.emit(sandwich);
+    this.sandwichSelection = sandwich;
   }
 }

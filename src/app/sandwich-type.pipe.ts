@@ -1,5 +1,6 @@
 import { Pipe, PipeTransform } from '@angular/core';
 import { Sandwich } from './models/sandwich.model';
+import { AngularFireDatabase, FirebaseListObservable } from 'angularfire2/database';
 
 @Pipe
 ({
