@@ -34,3 +34,4 @@ This application is an attempt to recreate the existing Jimmy John's website usi
  * Store Component
  * Franchising Component
  * Store Locator Component
+ * Order Component
