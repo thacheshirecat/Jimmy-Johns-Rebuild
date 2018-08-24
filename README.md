@@ -7,6 +7,8 @@ By Alex Bunnell
 This application is an attempt to recreate the existing Jimmy John's website using Angular
 
 ### Set Up & Installation
+  * Site can be found at https://jimmy-johns-rebuild.firebaseapp.com/
+
   * Clone repository from https://github.com/thacheshirecat/Jimmy-Johns-Rebuild
   * Navigate to the jimmy-johns-rebuild directory in your console
   * Execute 'npm install'
@@ -17,7 +19,7 @@ This application is an attempt to recreate the existing Jimmy John's website usi
 * It should contain a header with a navigation bar that appears above each view, as well as a footer under each view. (Partially Complete)
 * It should contain a splash page (Complete)
   1. Splash page contains a carousel of image links (Incomplete)
-* It should contain a menu page with side navigation bar to display menu items (Partially Complete)
+* It should contain a menu page with side navigation bar to display menu items (Mostly Complete)
   1. The side navigation should have two main sections, Menu and Catering (Buttons exist but are not functional)
   2. Menu items should be stored and retrieved from a database
 * It should contain an About Us section with a sidebar navigation for various sub-sections (Incomplete)
@@ -36,3 +38,6 @@ This application is an attempt to recreate the existing Jimmy John's website usi
  * Franchising Component (Not Yet Included)
  * Store Locator Component (Not Yet Included)
  * Order Component (Not Yet Included)
+
+#### Licensing information
+ * All content including images, menu items, and descriptions are registered trademarks of Jimmy John's. The code used in this project is for educational purposes only and makes use of an MIT license.
