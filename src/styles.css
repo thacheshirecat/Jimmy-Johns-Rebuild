@@ -1,1 +1,34 @@
-/* You can add global styles to this file, and also import other style files */
+#logo
+{
+  height: 150px;
+  margin-top: 25px;
+}
+#logo:hover
+{
+  cursor: pointer;
+}
+#order-logo
+{
+  height: 75px;
+}
+#header-or
+{
+  display: inline;
+}
+#header-navigation
+{
+  margin-left: 200px;
+}
+.navigation-option
+{
+  font-family: 'Rockwell W01 Bold',Georgia,serif;
+  color: #d42029;
+  font-weight: bold;
+  display: inline;
+  padding-right: 50px;
+}
+.navigation-option:hover
+{
+  cursor: pointer;
+  color: #656565;
+}
