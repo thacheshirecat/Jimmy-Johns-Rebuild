@@ -36,6 +36,7 @@ export class MenuListComponent
     this.filterByType = category;
     this.menuSelection = category;
     this.sandwichSelection = 'none';
+    this.sideSelection = 'none';
     // this.menuClickSender.emit(category);
   }
   viewSandwich(sandwich)
@@ -43,12 +44,21 @@ export class MenuListComponent
     this.selectedSandwich = sandwich;
     this.sandwichSelection = 'selected';
   }
+  viewSide(side)
+  {
+    this.selectedSide = side;
+    this.sideSelection = 'selected';
+  }
 
   getSandwiches()
   {
     return this.sandwichList;
   }
 
+  getSides()
+  {
+    return this.sideList;
+  }
 
   clickSandwich(sandwich: string)
   {

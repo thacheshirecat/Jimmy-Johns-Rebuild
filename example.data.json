@@ -327,8 +327,25 @@
       "imageLink": "slim_6.jpg"
     }
   ],
-  "products":
+  "sides":
   [
-
+    {
+      "name": "Kickin' Ranch®",
+      "calories": "150 CAL EA.",
+      "cost": "0",
+      "type": "sauce"
+    },
+    {
+      "name": "Regular",
+      "calories": "300 CAL/BAG",
+      "cost": "0",
+      "type": "chip"
+    },
+    {
+      "name": "BBQ",
+      "calories": "300 CAL/BAG",
+      "cost": "0",
+      "type": "chip"
+    }
   ]
 }
