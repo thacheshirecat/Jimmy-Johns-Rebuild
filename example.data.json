@@ -12,7 +12,7 @@
       "ingredients": ["lettuce", "tomato", "mayo"],
       "type": "classic",
       "cost": "0",
-      "imageLink": ""
+      "imageLink": "01_pepe.jpg"
     },
     {
       "menuId": 2,
@@ -25,7 +25,7 @@
       "ingredients": ["lettuce", "tomato", "mayo"],
       "type": "classic",
       "cost": "0",
-      "imageLink": ""
+      "imageLink": "02_bigjohn.jpg"
     },
     {
       "menuId": 8,
@@ -51,7 +51,7 @@
       "ingredients": ["onion", "lettuce", "tomato", "mayo", "oil & vinegar", "oregano-basil"],
       "type": "gargantuan",
       "cost": "0",
-      "imageLink": ""
+      "imageLink": "gargantuan.jpg"
     },
     {
       "menuId": null,
@@ -64,7 +64,7 @@
       "ingredients": ["ham", "cheese"],
       "type": "slim",
       "cost": "0",
-      "imageLink": ""
+      "imageLink": "slim.jpg"
     },
     {
       "menuId": 9,
@@ -195,6 +195,136 @@
       "type": "favorite",
       "cost": "0",
       "imageLink": "15_club_tuna.jpg"
+    },
+    {
+      "menuId": 4,
+      "realName": "TURKEY BREAST",
+      "codeName": "TURKEY TOM®",
+      "totalCal": 1010,
+      "unwichCal": 230,
+      "frenchCal": 510,
+      "wheatCal": 590,
+      "ingredients": ["cucumber", "lettuce", "tomato"],
+      "type": "classic",
+      "cost": "0",
+      "imageLink": "04_turkeytom.jpg"
+    },
+    {
+      "menuId": 5,
+      "realName": "PERFECT ITALIAN",
+      "codeName": "VITO®",
+      "totalCal": 1230,
+      "unwichCal": 340,
+      "frenchCal": 620,
+      "wheatCal": 700,
+      "ingredients": ["salami", "capicola", "provolone", "onion", "lettuce", "tomato", "oil & vinegar", "oregano-basil"],
+      "type": "classic",
+      "cost": "0",
+      "imageLink": "vito.jpg"
+    },
+    {
+      "menuId": null,
+      "realName": "J.J.B.L.T.® ",
+      "codeName": "Bacon",
+      "totalCal": 1130,
+      "unwichCal": 290,
+      "frenchCal": 570,
+      "wheatCal": 650,
+      "ingredients": ["lettuce", "tomato", "mayo"],
+      "type": "classic",
+      "cost": "0",
+      "imageLink": "jjblt.jpg"
+    },
+    {
+      "menuId": "3",
+      "realName": "TUNA SALAD",
+      "codeName": "TOTALLY TUNA®",
+      "totalCal": 1110,
+      "unwichCal": 280,
+      "frenchCal": 560,
+      "wheatCal": 640,
+      "ingredients": ["cucumber", "lettuce", "tomato"],
+      "type": "classic",
+      "cost": "0",
+      "imageLink": "03_totallytuna.jpg"
+    },
+    {
+      "menuId": "6",
+      "realName": "THE VEGGIE",
+      "codeName": "Sliced provolone",
+      "totalCal": 1110,
+      "unwichCal": 280,
+      "frenchCal": 560,
+      "wheatCal": 640,
+      "ingredients": ["avacado", "cucumber", "lettuce", "tomato", "mayo"],
+      "type": "classic",
+      "cost": "0",
+      "imageLink": "06_vegetarian.jpg"
+    },
+    {
+      "menuId": null,
+      "realName": "Slim 2",
+      "codeName": null,
+      "totalCal": null,
+      "unwichCal": 100,
+      "frenchCal": 450,
+      "wheatCal": 480,
+      "ingredients": ["Roast beef"],
+      "type": "slim",
+      "cost": "0",
+      "imageLink": "slim_2.jpg"
+    },
+    {
+      "menuId": null,
+      "realName": "Slim 3",
+      "codeName": null,
+      "totalCal": null,
+      "unwichCal": 270,
+      "frenchCal": 620,
+      "wheatCal": 650,
+      "ingredients": ["Tuna salad"],
+      "type": "slim",
+      "cost": "0",
+      "imageLink": "slim_3.jpg"
+    },
+    {
+      "menuId": null,
+      "realName": "Slim 4",
+      "codeName": null,
+      "totalCal": null,
+      "unwichCal": 70,
+      "frenchCal": 420,
+      "wheatCal": 450,
+      "ingredients": ["Turkey"],
+      "type": "slim",
+      "cost": "0",
+      "imageLink": "slim_4.jpg"
+    },
+    {
+      "menuId": null,
+      "realName": "Slim 5",
+      "codeName": null,
+      "totalCal": null,
+      "unwichCal": 280,
+      "frenchCal": 630,
+      "wheatCal": 660,
+      "ingredients": ["Italian"],
+      "type": "slim",
+      "cost": "0",
+      "imageLink": "slim_5.jpg"
+    },
+    {
+      "menuId": null,
+      "realName": "Slim 6",
+      "codeName": null,
+      "totalCal": null,
+      "unwichCal": 230,
+      "frenchCal": 610,
+      "wheatCal": 580,
+      "ingredients": ["Cheese"],
+      "type": "slim",
+      "cost": "0",
+      "imageLink": "slim_6.jpg"
     }
   ],
   "products":
