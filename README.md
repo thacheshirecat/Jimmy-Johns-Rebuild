@@ -28,8 +28,6 @@ This application is an attempt to recreate the existing Jimmy John's website usi
 * It should contain an ordering section where menu items that a user wants to order should be displayed and a total cost shown. (Incomplete)
 
 #### Potential Components
- * Header Component (Included)
- * Footer Component (Included)
  * Splash Page Component (Included)
  * Menu Component (Included)
  * About Us Component (Not Yet Included)

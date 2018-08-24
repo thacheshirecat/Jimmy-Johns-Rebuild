@@ -6,8 +6,6 @@ import { AngularFireModule } from 'angularfire2';
 import { AngularFireDatabaseModule } from 'angularfire2/database';
 import { routing } from './app.routing';
 
-import { HeaderNavigationComponent } from './header-navigation/header-navigation.component';
-import { FooterNavigationComponent } from './footer-navigation/footer-navigation.component';
 import { SplashPageComponent } from './splash-page/splash-page.component';
 import { MenuListComponent } from './menu-list/menu-list.component';
 import { SandwichTypePipe } from './sandwich-type.pipe';
@@ -23,8 +21,6 @@ export const firebaseConfig =
 @NgModule({
   declarations: [
     AppComponent,
-    HeaderNavigationComponent,
-    FooterNavigationComponent,
     SplashPageComponent,
     MenuListComponent,
     SandwichTypePipe

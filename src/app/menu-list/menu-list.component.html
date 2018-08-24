@@ -30,7 +30,7 @@
 
     <button class="menu-button" (click)="clickMenu('classic')">Classics</button>
     <div *ngIf="menuSelection === 'classic'">
-        <button class="sandwich-button" *ngFor="let sandwich of sandwichList | async | sandwichtype:filterByType">#{{sandwich.menuId}} {{sandwich.realName}}<br>
+        <button class="sandwich-button" *ngFor="let sandwich of sandwichList | async | sandwichtype:filterByType" (click)="viewSandwich(sandwich)">#{{sandwich.menuId}} {{sandwich.realName}}<br>
         {{sandwich.unwichCal}}-{{sandwich.wheatCal}} | {{sandwich.totalCal}} Cal<br>
         {{sandwich.codeName}} {{sandwich.ingredients}}</button>
     </div><br>
@@ -57,25 +57,25 @@
       <img src='./../assets/freak_yeah_menu.jpg'>
     </div>
 
-    <div *ngIf="menuSelection === 'favorite'">
+    <div *ngIf="menuSelection === 'favorite' && sandwichSelection === 'none'">
       <h4>Jimmy John's Menu</h4>
       <p>Browse the menu at left and add items to your meal.</p>
       <img src='./../assets/clubs_category_photo.jpg'>
     </div>
 
-    <div *ngIf="menuSelection === 'classic'">
+    <div *ngIf="menuSelection === 'classic' && sandwichSelection === 'none'">
       <h4>Jimmy John's Menu</h4>
       <p>Browse the menu at left and add items to your meal.</p>
       <img src='./../assets/vito.jpg'>
     </div>
 
-    <div *ngIf="menuSelection === 'gargantuan'">
+    <div *ngIf="menuSelection === 'gargantuan' && sandwichSelection === 'none'">
       <h4>Jimmy John's Menu</h4>
       <p>Browse the menu at left and add items to your meal.</p>
       <img src='./../assets/gargantuan.jpg'>
     </div>
 
-    <div *ngIf="menuSelection === 'slim'">
+    <div *ngIf="menuSelection === 'slim' && sandwichSelection === 'none'">
       <h4>Jimmy John's Menu</h4>
       <p>Browse the menu at left and add items to your meal.</p>
       <img src='./../assets/slim.jpg'>
