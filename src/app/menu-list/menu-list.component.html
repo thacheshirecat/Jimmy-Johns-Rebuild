@@ -1,4 +1,4 @@
-<img id='logo' src='./../assets/jimmyjohns_logo.png' (click)="changeViewClicked('splash-page')">
+<a routerLink=""><img id='logo' src='./../assets/jimmyjohns_logo.png' (click)="changeViewClicked('splash-page')"></a>
 <img id='order-logo' src='./../assets/orderOnlineFlag.png'>
 <button class='btn btn-danger'>Login</button>
 <p id='header-or'>or</p>
@@ -9,7 +9,7 @@
 <button>Pick Up</button>
 
 <div id='header-navigation'>
-  <p class='navigation-option' (click)="changeViewClicked('menu-page')">Menu</p>
+  <p class='navigation-option'><a routerLink="menu">Menu</a></p>
   <p class='navigation-option'>Find a JJ's</p>
   <p class='navigation-option'>About Us</p>
   <p class='navigation-option'>Gift Cards</p>
