@@ -51,7 +51,7 @@
 
     <button class="menu-button-sides" (click)="clickMenu('sides')">Sides</button>
     <div *ngIf="menuSelection === 'sides'">
-      <button class="sandwich-button" *ngFor="let side of sidesList | async" (click)="viewSide(side)">{{side.name}} {{side.calories}}</button>
+      <button class="sandwich-button" *ngFor="let side of sidesList | async">{{side.name}} {{side.calories}}</button>
     </div>
   </div>
 
